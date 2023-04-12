@@ -1,0 +1,73 @@
+@{
+    ViewData["Title"] = "SignUp";
+}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="~/css/signup.css">
+</head>
+<body>
+    <div1></div1>
+    <script src="app.js"></script>
+
+    <div2 class="center">
+        <h1>Sign up</h1>
+        <form method="post">
+
+            <div class="txt_field">
+                <input title="Please fill out this field." type="text" required>
+                <span>   <br></span>
+                <label>Full Name</label>
+            </div>
+
+            <div class="txt_field">
+                <input title="Please fillout this field." type="email" required>
+                <span>   <br></span>
+                <label>Email</label>
+            </div>
+
+            <div class="txt_field">
+                <input title="Please fill out this field." type="text" required>
+                <span>   <br></span>
+                <label>Phone Number</label>
+            </div>
+
+            <div class="txt_field">
+                <input title="Please fill out this field." type="date" required id="dateOfBirth">
+                <script>
+                    var dateOfBirth = new Date();
+                    document.getElementById("dateOfBirth").value;
+                    console.log(dateOfBirth);
+                </script>
+                <span>   <br></span>
+                <label></label>
+            </div>
+            
+            <div class="txt_field">
+                <input title="Please fillout this field." type="password" required id="password_input">
+                <span></span>
+                <label>Password</label>
+            </div>
+
+            <input title="Password visibility toggle." type="checkbox" onclick="hidePass()" 
+            style=
+            "position: relative;
+            margin-left: 273px; 
+            height: 40px;
+            transform: translateY(-175%);">
+            <form action="anotherPageLink.html">
+                <input type="submit" value="sign up">
+            </form>
+            
+            <div class="singup_link">
+                Already have an account? 
+                <a href="login.html">Login</a>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

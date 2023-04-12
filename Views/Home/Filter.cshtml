@@ -1,0 +1,114 @@
+@{
+    ViewData["Title"] = "Filter";
+}
+
+<div class="container my-4">
+
+  <p class="font-weight-bold">An example of bootstrap search filter . Easy to implement and customize. Examples of basic and advanced usage.</p>
+
+  <p><strong>Detailed documentation and more examples you can find in our <a href="https://mdbootstrap.com/docs/standard/forms/search/"
+                                                                             target="_blank">Bootstrap Search Docs</a> </p>
+
+     <hr class="mt-5">
+
+    <p>Built with <a target="_blank" href="https://mdbootstrap.com/docs/standard/">Material Design for Bootstrap</a> - free and powerful Bootstrap UI KIT</p>
+
+    <a class="btn btn-primary me-2" href="https://mdbootstrap.com/docs/standard/getting-started/installation/" target="_blank" role="button">Download MDB UI KIT<i class="fas fa-download ms-2"></i></a>
+    <a class="btn btn-danger me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/" role="button">Learn more</a>
+    <a class="btn btn-success me-2" target="_blank" href="https://mdbootstrap.com/docs/standard/getting-started/" role="button">Tutorials</a>
+    <a class="btn btn-dark me-2" target="_blank" href="https://github.com/mdbootstrap/mdb-ui-kit" role="button">GitHub<i class="fab fa-github ms-2"></i></a>
+
+    <hr class="mb-5"/>
+
+  <p class="font-weight-bold">Filter Tables</p>
+  
+    <p>Type something in the input field to search the table for first names, last names or emails:</p>  
+  <input class="form-control mb-4" id="tableSearch" type="text" placeholder="Search..">
+  
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody id="myTable">
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@mail.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@greatstuff.com</td>
+      </tr>
+      <tr>
+        <td>Anja</td>
+        <td>Ravendale</td>
+        <td>a_r@test.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <hr>
+
+  <p class="font-weight-bold">Filter Lists</p>
+  
+    <p>Type something in the input field to search the list for specific items:</p>  
+  <input class="form-control" id="listSearch" type="text" placeholder="Search..">
+  <br>
+  <ul class="list-group" id="myList">
+    <li class="list-group-item">First item</li>
+    <li class="list-group-item">Second item</li>
+    <li class="list-group-item">Third item</li>
+    <li class="list-group-item">Fourth</li>
+  </ul>  
+
+
+
+  <hr>
+
+  <p class="font-weight-bold">Filter Dropdowns</p>
+
+<div class="dropdown">
+  <!--Trigger-->
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1-1"
+    data-toggle="dropdown">Bootstrap
+    search</button>
+
+  <!--Menu-->
+  <div class="dropdown-menu dropdown-primary" id="your-custom-id">
+    <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+    <a class="dropdown-item mdb-dropdownLink-1" href="https://mdbootstrap.com/">MDB</a>
+    <a class="dropdown-item mdb-dropdownLink-1" href="https://mdbootstrap.com/docs/react/">MDB react</a>
+    <a class="dropdown-item mdb-dropdownLink-1" href="https://mdbootstrap.com/docs/angular/">MDB angular</a>
+    <a class="dropdown-item mdb-dropdownLink-1" href="https://mdbootstrap.com/docs/vue/">MDB vue</a>
+    <a class="dropdown-item mdb-dropdownLink-1" href="https://brandflow.net/">BrandFlow</a>
+    <a class="dropdown-item mdb-dropdownLink-1" href="https://mdbootstrap.com/education/bootstrap/">MDB
+      Rocks</a>
+  </div>
+</div>
+
+  <hr>
+
+  <p class="font-weight-bold">Filter Anything</p>
+  
+  <p>Type something in the input field to search for a specific text inside the div element with id="myDIV":</p>
+  <input class="form-control" id="anythingSearch" type="text" placeholder="Search..">
+  <div id="myDIV">
+    <p>I am a paragraph.</p>
+    <div>I am a div element inside div.</div>
+    <button class="btn btn-default">I am a button</button>
+    <button class="btn btn-info">Another button</button>
+    <p>Another paragraph.</p>
+  </div>
+
+</div>

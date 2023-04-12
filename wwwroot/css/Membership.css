@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*background: linear-gradient(#bdc3c7,#2c3e50);*/
+    height: 100vh;
+    overflow: hidden;
+        
+    min-height: 100hv;
+    background-image: url(./img.png);
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(25px);
+}
+.topBar {
+    background-image:url(./phlogo.png) no-repeat 50%;
+    background-size: contain;
+    display: inline-block;
+    height: 3.2rem;
+    text-indent: -999em;
+    width: 11.6rem;
+}
+.membership-highlighted h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.membership-price-wrapper.membership-modified {
+    min-height: 2rem;
+    padding: 0.5rem 1rem;
+}
